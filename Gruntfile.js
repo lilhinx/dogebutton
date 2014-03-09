@@ -47,6 +47,12 @@ module.exports = function( grunt )
 				tasks: [ 'jade' ],
 				options: { livereload:true }
 			},
+			sass:
+			{
+				files: [ '**/*.scss' ],
+				tasks: [ 'sass' ],
+				options: { livereload:false }
+			},
 		},
 	} );
 
