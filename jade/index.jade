@@ -1,16 +1,13 @@
-html
+html( ng-app="dogeButtonApp" )
 	link( rel="stylesheet", href="css/index.css" )
-	body
+	script( type="text/javascript", src="bower_components/angular/angular.min.js" )
+	script( type="text/javascript", src="js/dogeButton.js" )
+	body( ng-controller="DogeController" )
 		h1 Doge Button So Tappings
-		.button-wrapper
-			a.a-btn
-				img( src="http://design14.volusion.com/v/proofs/Hack_Day_CSS3/images/cart.png", alt="Doges" )
-				span.a-btn-text Plz Tips. Much Appreciate
-				span.a-btn-icon-right Info
+		doge-button( username="lilhinx", texts="[ 'such', 'wow' ]" )
 		#customizer-section
 			form
 				label( for="twitter" ) Twitter Username
 				input( type="text", name="twitter" )
 			hr
-			textarea Button code
-
+			textarea( ng-model="widgetCode.innerHTML" )
