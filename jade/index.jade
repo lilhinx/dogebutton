@@ -8,6 +8,6 @@ html( ng-app="dogeButtonApp" )
 		#customizer-section
 			form
 				label( for="twitter" ) Twitter Username
-				input( type="text", name="twitter" )
+				input( type="text", name="twitter", ng-model="username" )
 			hr
-			textarea( ng-model="widgetCode.innerHTML" )
+			textarea( rows="10", size="100", ng-model="widgetCode.innerHTML" )
