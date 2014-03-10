@@ -5,7 +5,7 @@ dogeButton.controller( "DogeIndexController", function( $scope, $compile, $log, 
 	$scope.createWidgetCode = function( )
 	{
 		var btn = angular.element( document.createElement( 'doge-embed' ) );
-		btn.setAttribute( 'username', $scope.username );
+		btn.attr( 'username', $scope.username );
 	    $scope.widgetCode = $compile( btn )( $scope )[ 0 ];
 	};
 	
@@ -17,7 +17,7 @@ dogeButton.controller( "DogeIndexController", function( $scope, $compile, $log, 
 } );
 
 dogeButton.controller( "DogeButtonController", function( $scope, $compile, $log, $rootScope )
-{	
+{
 	
 } );
 
@@ -49,7 +49,7 @@ dogeButton.directive( "dogeEmbed", function( )
 {
 	return {
 		restrict:'E',
-		scope:{ username:'=' },
+		scope:true,
 		controller:"DogeEmdedController",
 		templateUrl:'/doge-embed.html'
 	};
