@@ -72,7 +72,7 @@ dogeButton.directive( "dogeButton", function( )
 		restrict:'E',
 		scope:{ texts:'=' },
 		controller:"DogeButtonController",
-		templateUrl:'/doge-button.html'
+		templateUrl:'doge-button.html'
 	};
 } );
 
@@ -82,7 +82,7 @@ dogeButton.directive( "dogeEmbed", function( )
 		restrict:'E',
 		scope:true,
 		controller:"DogeEmdedController",
-		templateUrl:'/doge-embed.html'
+		templateUrl:'doge-embed.html'
 	};
 } );
 
