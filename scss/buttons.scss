@@ -2,9 +2,17 @@
 
 .doge-body {
 	margin:20px;
+	background:#F2EDE0;
+	text-align:center;
 }
+
+.dogebutton{
+	margin:20 auto;
+}
+
+
 .button-wrapper {
-    
+    cursor:hand;
 	clear: both;
 }
 
@@ -12,6 +20,20 @@
 	color: #FFFFFF;
 	text-decoration: none;
 }
+
+.button-wrapper span {
+	color: #FFFFFF;
+	cursor:hand;
+}
+
+.clicky{
+    display:inline-block;
+    height:60px;
+	width: 270px;
+    cursor:hand;
+    
+}
+
 
 .a-btn
 {
@@ -48,9 +70,29 @@
 
 .a-btn-icon-right
 {
-    position:absolute;
-    right:0px;
-    top:0px;
+    font-size:10px;
+	position:absolute;
+    right:3px;
+    top:50px;
 	text-decoration:underline;
-
 }
+
+.a-btn-text1 {
+    position:absolute;
+    left:110px;
+    top:0px;
+	line-height:1;
+}
+.a-btn-text2 {
+    position:absolute;
+    left:170px;
+    top:30px;
+	line-height:1;
+}
+.a-btn-text3 {
+    position:absolute;
+    left:80px;
+    top:40px;
+	line-height:1;
+}
+

@@ -42,6 +42,12 @@ dogeButton.controller( "DogeButtonController", function( $scope, $compile, $log,
 		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), results = regex.exec(location.search);
 		return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 	};
+	
+	$scope.infoButton = function( )
+	{
+		$window.parent.location.href = 'http://dogebutton.biz';
+	};
+	
 } );
 
 dogeButton.controller( "DogeEmdedController", function( $scope, $compile, $log, $rootScope, $window )
@@ -57,6 +63,7 @@ dogeButton.controller( "DogeEmdedController", function( $scope, $compile, $log, 
 	} );
 	
 	$scope.formUrl( );
+	
 } );
 
 dogeButton.directive( "dogeButton", function( )

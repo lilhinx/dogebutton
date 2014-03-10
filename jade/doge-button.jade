@@ -1,5 +1,9 @@
 .button-wrapper
-	a.a-btn( ng-click="dogeClick( )" )
-		img( ng-src="{{buttonImage}}", alt="Doges", width="84", height="110" )
-		span.a-btn-text
-		span.a-btn-icon-right Info
+	div.a-btn( )
+		span.a-btn-icon-right( ng-click="infoButton( )" ) many info
+		a.clicky( ng-click="dogeClick( )" )
+			img( ng-src="{{buttonImage}}", alt="Doges", width="84", height="110" )
+			span.a-btn-text1 very tip
+			span.a-btn-text2 such Dogecoin
+			span.a-btn-text3 wow
+
