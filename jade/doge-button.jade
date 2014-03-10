@@ -1,6 +1,5 @@
 .button-wrapper
-	a.a-btn
-		
-		img( src="/images/dogebutton_99.png", alt="Doges", width="48", height="48" )
+	a.a-btn( ng-click="dogeClick( )" )
+		img( ng-src="{{buttonImage}}", alt="Doges", width="48", height="48" )
 		span.a-btn-text
 		span.a-btn-icon-right Info
