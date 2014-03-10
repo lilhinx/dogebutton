@@ -2,9 +2,9 @@ html( ng-app="dogeButtonApp" )
 	link( rel="stylesheet", href="css/index.css" )
 	script( type="text/javascript", src="bower_components/angular/angular.min.js" )
 	script( type="text/javascript", src="js/dogeButton.js" )
-	body( ng-controller="DogeController" )
+	body( ng-controller="DogeIndexController" )
 		h1 Doge Button So Tappings
-		doge-button( username="lilhinx", texts="[ 'such', 'wow' ]" )
+		doge-embed( username="username" )
 		#customizer-section
 			form
 				label( for="twitter" ) Twitter Username

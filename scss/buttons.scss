@@ -1,9 +1,7 @@
 /* BUTTON UNIVERSAL SYLES */
 
 .button-wrapper {
-    margin: 0 auto;
-    padding: 20px 0;
-    width: 320px;
+    
 	clear: both;
 }
 
@@ -16,9 +14,9 @@
 {
     background:#a9db80;
     
-    padding-left:90px;
-    padding-right:105px;
-    height:90px;
+   
+    height:70px;
+	width: 280px;
     display:inline-block;
     position:relative;
     border:1px solid #80ab5d;
@@ -26,7 +24,6 @@
     border-radius:4px;
     float:left;
     clear:both;
-    margin:10px 0px;
     overflow:hidden;
 }
 
