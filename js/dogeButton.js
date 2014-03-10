@@ -18,8 +18,8 @@ dogeButton.controller( "DogeIndexController", function( $scope, $compile, $log, 
 
 dogeButton.controller( "DogeButtonController", function( $scope, $compile, $log, $rootScope, $window )
 {
-	$scope.dogeImage = "/images/dogebutton_99.png";
-	$scope.dogeImageGlasses = "/images/dogebutton_glasses_99.png";
+	$scope.dogeImage = "images/dogebutton_99.png";
+	$scope.dogeImageGlasses = "images/dogebutton_glasses_99.png";
 	$scope.buttonImage = $scope.dogeImage;
 	
 	$scope.dogeClick = function( )
