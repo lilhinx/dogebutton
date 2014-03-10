@@ -1,5 +1,8 @@
 /* BUTTON UNIVERSAL SYLES */
 
+.doge-body {
+	margin:20px;
+}
 .button-wrapper {
     
 	clear: both;
@@ -12,7 +15,7 @@
 
 .a-btn
 {
-    background:#a9db80;
+    background:#d22cdc;
     
    
     height:70px;
@@ -31,7 +34,7 @@
 {
     position:absolute;
     left:15px;
-    top:13px;
+    top:-6px;
     border:none;
 }
 
@@ -48,7 +51,6 @@
     position:absolute;
     right:0px;
     top:0px;
-    height:100%;
-    width:80px;
-    border-left:1px solid #80ab5d;
+	text-decoration:underline;
+
 }
