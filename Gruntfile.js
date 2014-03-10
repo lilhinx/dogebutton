@@ -17,6 +17,12 @@ module.exports = function( grunt )
 				} ]
 			}
 		},
+		copy: {
+		  main: {
+		    src: 'button.html',
+		    dest: 'dogebutton/button.html',
+		  },
+		},
 		sass: {
 			dist: {
 				options: {
@@ -24,7 +30,7 @@ module.exports = function( grunt )
 					outputStyle: 'compressed'
 				},
 				files: {
-					'./css/index.css' : 'scss/index.scss'
+					'css/index.css' : 'scss/index.scss'
 				}
 			}
 		},
@@ -44,7 +50,7 @@ module.exports = function( grunt )
 			jade:
 			{
 				files: [ '**/*.jade' ],
-				tasks: [ 'jade' ],
+				tasks: [ 'jade', 'copy' ],
 				options: { livereload:true }
 			},
 			sass:
@@ -63,6 +69,6 @@ module.exports = function( grunt )
   grunt.loadNpmTasks( 'grunt-contrib-watch' );
   grunt.loadNpmTasks( 'grunt-contrib-jade' );
   grunt.loadNpmTasks( 'grunt-sass' );
-  grunt.registerTask( 'default', [ 'jade', 'sass', 'connect', 'watch'] );
+  grunt.registerTask( 'default', [ 'jade', 'copy', 'sass', 'connect', 'watch'] );
 
 };
