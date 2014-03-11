@@ -16,7 +16,7 @@ dogeButton.controller( "DogeIndexController", function( $scope, $compile, $log, 
 	
 } );
 
-dogeButton.controller( "DogeButtonController", function( $scope, $compile, $log, $rootScope, $window )
+dogeButton.controller( "DogeButtonController", function( $scope, $compile, $log, $rootScope, $window, $timeout )
 {
 	$scope.dogeImage = "images/dogebutton_99.png";
 	$scope.dogeImageGlasses = "images/dogebutton_glasses_99.png";
@@ -25,6 +25,11 @@ dogeButton.controller( "DogeButtonController", function( $scope, $compile, $log,
 	$scope.dogeClick = function( )
 	{
 		$scope.buttonImage = $scope.dogeImageGlasses;
+		$timeout( $scope.openTwitterIntent, 10 );
+	};
+	
+	$scope.openTwitterIntent = function( )
+	{
 		var username = $scope.getParameterByName( "username" );
 		var text = "@tipdoge tip " + username + " 10 DOGE";
 		var encoded = encodeURIComponent( text );
@@ -32,9 +37,8 @@ dogeButton.controller( "DogeButtonController", function( $scope, $compile, $log,
 		var windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes';
 		var width = 550;
 		var height = 420;
-
 		$window.open( url, 'intent', windowOptions + ',width=' + width +',height=' + height );
-	};
+	}
 	
 	$scope.getParameterByName = function( name )
 	{
