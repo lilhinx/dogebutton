@@ -31,7 +31,7 @@ dogeButton.controller( "DogeButtonController", function( $scope, $compile, $log,
 	$scope.openTwitterIntent = function( )
 	{
 		var username = $scope.getParameterByName( "username" );
-		var text = "@tipdoge tip " + username + " 10 DOGE";
+		var text = "@tipdoge tip " + username + " 10 DOGE w/ #dogebutton";
 		var encoded = encodeURIComponent( text );
 		var url = "https://twitter.com/intent/tweet?text="+encoded;
 		var windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes';
