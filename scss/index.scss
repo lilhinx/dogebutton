@@ -17,9 +17,10 @@ body
 }
 
 .container {
+	margin:30px;
 	@media (max-width: 767px) {
 		width:300px;
-		margin:auto;
+		margin:10px;
 	}
 }
 
