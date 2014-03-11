@@ -90,6 +90,16 @@ dogeButton.directive( "dogeEmbed", function( )
 	};
 } );
 
+dogeButton.directive( "dogeUs", function( )
+{
+	return {
+		restrict:'E',
+		scope:{ username:"=" },
+		controller:"DogeEmdedController",
+		templateUrl:'doge-embed.html'
+	};
+} );
+
 
 dogeButton.directive( 'atPrefix', function( )
 {
