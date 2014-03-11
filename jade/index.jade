@@ -2,41 +2,44 @@ html( ng-app="dogeButtonApp" )
 	title Doge Button
 	link( rel="stylesheet", href="css/index.css" )
 	link(rel="icon" type="image/png" href="images/dogebutton_icon_glasses_64.png")
+	meta( name="viewport", content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" )
 	script( type="text/javascript", src="bower_components/angular/angular.min.js" )
 	script( type="text/javascript", src="js/dogeButton.js" )
 	body.doge-body( ng-controller="DogeIndexController" )
-		h1 
-			span( style="color:#1391c6" ) very tips. 
-			span( style="color:#c67813" ) so button.
-		h3 This is our Doge Button. Tap it to give us Dogecoins if you like Doge Buttons.
-		doge-us( username="'@dogebutton'" )
-		br
-		hr
-		br
-		h3 Such button maker. Amaze.
-		#customizer-section
-			form
-				label( for="twitter" ) Enter your twitter name to get your own Doge Button:
-				br 
-				input( placeholder="@dogebutton" type="text", name="twitter", ng-model="username", at-prefix )
-			label( for="coedz" ) Such embed code:
+		.container
+			h1 
+				span( style="color:#1391c6; white-space:nowrap;" ) very tips. 
+				| 
+				span( style="color:#c67813; white-space:nowrap;" ) so button.
+			h3 This is our Doge Button. Tap it to give us Dogecoins if you like Doge Buttons.
+			doge-us( username="'@dogebutton'" )
 			br
-			textarea( class="coedz", rows="6", name="coedz", style="width:300px;", ng-model="widgetCode.innerHTML" )
-		p Made by 
-			a( href="http://www.tapraise.com" ) TapRaise
-		p powered by 
-			a( href="http://www.tipdoge.info") @tipdoge
-		p need doge to give? 
-			a( href="http://dogecoin.com/get-started" ) very guide
-			| .
-		p wow 
-			a( href="https://github.com/lilhinx/dogebutton" ) open source
-		p so tweets 
-			a( href="https://twitter.com/search?q=%40dogebutton&src=typd" ) @dogebutton
-		script.
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-47897486-3', 'dogebutton.biz');
-			ga('send', 'pageview');
+			hr
+			br
+			h3 Such button maker. Amaze.
+			#customizer-section
+				form
+					label( for="twitter" ) Enter your twitter name to get your own Doge Button:
+					br 
+					input( placeholder="@dogebutton", type="text", name="twitter", ng-model="username", at-prefix )
+				label( for="coedz" ) Such embed code:
+				br
+				textarea( class="coedz", rows="6", name="coedz", style="width:300px;", ng-model="widgetCode.innerHTML" )
+			p Made by 
+				a( href="http://www.tapraise.com" ) TapRaise
+			p powered by 
+				a( href="http://www.tipdoge.info") @tipdoge
+			p need doge to give? 
+				a( href="http://dogecoin.com/get-started" ) very guide
+				| .
+			p wow 
+				a( href="https://github.com/lilhinx/dogebutton" ) open source
+			p so tweets 
+				a( href="https://twitter.com/search?q=%40dogebutton&src=typd" ) @dogebutton
+			script.
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-47897486-3', 'dogebutton.biz');
+				ga('send', 'pageview');
