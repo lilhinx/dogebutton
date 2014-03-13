@@ -25,7 +25,7 @@ dogeButton.controller( "DogeButtonController", function( $scope, $compile, $log,
 	$scope.dogeClick = function( )
 	{
 		$scope.buttonImage = $scope.dogeImageGlasses;
-		$timeout( $scope.openTwitterIntent, 10 );
+		$timeout( $scope.openTwitterIntent, 200 );
 	};
 	
 	$scope.openTwitterIntent = function( )
