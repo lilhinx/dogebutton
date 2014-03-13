@@ -3,10 +3,32 @@
 
 body
 {
-	font-family:Comic Sans MS, Comic Sans, Chalkboard, Helvetica, Arial, sans-serif;
+	font-family:Comic Sans MS, Comic Sans, ChalkboardSE-Regular, Helvetica, Arial, sans-serif;
 }
 
 #customizer-section
 {
 	clear:both;
 }
+
+.doge-body {
+	background:#F2EDE0;
+	text-align:center;
+}
+
+.container {
+	margin:30px;
+	@media (max-width: 767px) {
+		width:300px;
+		margin:10px;
+	}
+}
+
+h1 {
+	font-size:48px;
+}
+
+.coedz {
+	font-size:10px;
+}
+

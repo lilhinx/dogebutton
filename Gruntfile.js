@@ -42,7 +42,8 @@ module.exports = function( grunt )
 				{
 					port: 8080,
 					base: './',
-					keepalive: false
+					keepalive: false,
+					hostname: 'abellenz.local'
 				}
 			}
 		},
